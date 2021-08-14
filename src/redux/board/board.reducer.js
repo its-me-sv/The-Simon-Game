@@ -10,7 +10,7 @@ const INITIAL_STATE = {
     power: false,
     start: false,
     strict: false,
-    steps: [0],
+    steps: [randomRange()],
     children: [...cn],
     userMoves: [],
     shouldRun: false
@@ -23,7 +23,7 @@ const boardReducer = (state = INITIAL_STATE, action) => {
             return {
                 ...state,
                 power: !state.power,
-                steps: [0],
+                steps: [randomRange()],
                 children: [...cn],
                 userMoves: []
             };
@@ -31,7 +31,7 @@ const boardReducer = (state = INITIAL_STATE, action) => {
             return {
                 ...state,
                 start: !state.start,
-                steps: [0],
+                steps: [randomRange()],
                 children: [...cn]
             };
         case boardTypes.SET_STRICT:
@@ -54,6 +54,18 @@ const boardReducer = (state = INITIAL_STATE, action) => {
         case boardTypes.USER_MOVE: {
             let umCpy = [...state.userMoves, payload];
             if (umCpy.join("") === state.steps.slice(0, umCpy.length).join("")) {
+                if (umCpy.length === 20) {
+                    window.alert("You won the game");
+                    return {
+                        power: false,
+                        start: false,
+                        strict: false,
+                        steps: [randomRange()],
+                        children: [...cn],
+                        userMoves: [],
+                        shouldRun: false
+                    };
+                }
                 if (umCpy.length === state.steps.length) {
                     const nextPlace1 = randomRange();
                     return {
@@ -75,7 +87,7 @@ const boardReducer = (state = INITIAL_STATE, action) => {
                     ...state,
                     start: false,
                     userMoves: [],
-                    steps: [0],
+                    steps: [randomRange()],
                     shouldRun: true
                 };
             return {
