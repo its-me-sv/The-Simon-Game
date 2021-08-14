@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/The-Simon-Game/static/css/main.feade561.chunk.css",
+    "main.js": "/The-Simon-Game/static/js/main.eac996e5.chunk.js",
+    "main.js.map": "/The-Simon-Game/static/js/main.eac996e5.chunk.js.map",
+    "runtime-main.js": "/The-Simon-Game/static/js/runtime-main.2bee0880.js",
+    "runtime-main.js.map": "/The-Simon-Game/static/js/runtime-main.2bee0880.js.map",
+    "static/js/2.2a45893a.chunk.js": "/The-Simon-Game/static/js/2.2a45893a.chunk.js",
+    "static/js/2.2a45893a.chunk.js.map": "/The-Simon-Game/static/js/2.2a45893a.chunk.js.map",
+    "index.html": "/The-Simon-Game/index.html",
+    "static/css/main.feade561.chunk.css.map": "/The-Simon-Game/static/css/main.feade561.chunk.css.map",
+    "static/js/2.2a45893a.chunk.js.LICENSE.txt": "/The-Simon-Game/static/js/2.2a45893a.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/The-Simon-Game/static/media/ProximaNova-Semibold.815823c6.otf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2bee0880.js",
+    "static/js/2.2a45893a.chunk.js",
+    "static/css/main.feade561.chunk.css",
+    "static/js/main.eac996e5.chunk.js"
+  ]
+}
