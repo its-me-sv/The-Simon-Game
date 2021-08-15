@@ -10,7 +10,7 @@ const INITIAL_STATE = {
     power: false,
     start: false,
     strict: false,
-    steps: [randomRange()],
+    steps: [0],
     children: [...cn],
     userMoves: [],
     shouldRun: false
@@ -23,7 +23,7 @@ const boardReducer = (state = INITIAL_STATE, action) => {
             return {
                 ...state,
                 power: !state.power,
-                steps: [randomRange()],
+                steps: [0],
                 children: [...cn],
                 userMoves: []
             };
@@ -31,7 +31,7 @@ const boardReducer = (state = INITIAL_STATE, action) => {
             return {
                 ...state,
                 start: !state.start,
-                steps: [randomRange()],
+                steps: [0],
                 children: [...cn]
             };
         case boardTypes.SET_STRICT:
@@ -60,7 +60,7 @@ const boardReducer = (state = INITIAL_STATE, action) => {
                         power: false,
                         start: false,
                         strict: false,
-                        steps: [randomRange()],
+                        steps: [0],
                         children: [...cn],
                         userMoves: [],
                         shouldRun: false
@@ -87,7 +87,7 @@ const boardReducer = (state = INITIAL_STATE, action) => {
                     ...state,
                     start: false,
                     userMoves: [],
-                    steps: [randomRange()],
+                    steps: [0],
                     shouldRun: true
                 };
             return {

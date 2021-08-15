@@ -2,7 +2,13 @@ import React from "react";
 import {connect} from "react-redux";
 
 // Styles
-import "./menu.styles.css";
+import { 
+    CenterBoxStyles,
+    DisplayButtonsStyles,
+    TitleStyles,
+    ButtonStyles
+} from "./menu.styles";
+import { ChildBoxStyles } from "../board/board.styles";
 
 // Actions
 import {
@@ -23,15 +29,12 @@ import playSound from "../../utils/playSound";
 
 const Menu = ({
     power, 
-    start, 
     strict, 
     steps, 
     togglePower, 
     toggleStart, 
     toggleStrict, 
-    updateSteps,
     setChildren,
-    children,
     userMove,
     shouldRun,
     setShouldRun
@@ -42,8 +45,11 @@ const Menu = ({
         await sleep(1000);
         for (let index of steps) {
             childrenCpy = [...cn];
-            let noc = `child-box ${colorMap[index]} ${colorMap[index]}-active`;
-            newChild = <div className={noc} key={`${index}`}></div>
+            newChild = <ChildBoxStyles
+                styleColor={colorMap[index]}
+                mustActive={true}
+                key={`${index}`}
+            ></ChildBoxStyles>
             childrenCpy[index] = newChild;
             setChildren(childrenCpy);
             playSound(`${index}`);
@@ -71,16 +77,18 @@ const Menu = ({
         runBehind();
         setShouldRun(false);
     }
-
+    
     return (
-        <div className="center-box">
-            <span className="title">Simon</span>
-            <div className="disp-btns">
-                <button className={`count ${power ? "" : "disabled"}`}>
-                    {steps.length > 0 && power ? steps.length : "--"}
-                </button>
-                <button 
-                    className={`start ${power ? "" : "disabled"}`}
+        <CenterBoxStyles>
+            <TitleStyles>Simon</TitleStyles>
+            <DisplayButtonsStyles>
+                <ButtonStyles 
+                    noc={"count"}
+                    visible={!power}
+                >{steps.length > 0 && power ? steps.length : "--"}</ButtonStyles>
+                <ButtonStyles
+                    noc={"start"}
+                    visible={!power}
                     onClick={
                         () => {
                             if (!power) return;
@@ -88,19 +96,19 @@ const Menu = ({
                             runBehind();
                         }
                     }
-                >Start</button>
-                <button 
-                    className={`strict ${power && strict ? "" : "disabled"}`}
+                >Start</ButtonStyles>
+                <ButtonStyles
+                    noc={"strict"}
+                    visible={!strict}
                     onClick={() => power && toggleStrict()}
-                >Strict</button>
-            </div>
-            <button 
-                className={`switch ${power ? "" : "disabled"}`}
+                >Strict</ButtonStyles>
+            </DisplayButtonsStyles>
+            <ButtonStyles
+                noc={"switch"}
+                visible={!power}
                 onClick={togglePower}
-            >
-                On/Off
-            </button>
-        </div>
+            >On/Off</ButtonStyles>
+        </CenterBoxStyles>
     );
 };
 

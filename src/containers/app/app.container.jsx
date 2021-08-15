@@ -1,7 +1,7 @@
 import React from "react";
 
 // Styles
-import "./app.styles.css";
+import {AppContainerStyles} from "./app.styles";
 
 // Components
 import Board from "../../components/board/board.component";
@@ -9,9 +9,9 @@ import Board from "../../components/board/board.component";
 class App extends React.Component {
     render() {
         return (
-            <div className="app-container">
+            <AppContainerStyles>
                 <Board />
-            </div>
+            </AppContainerStyles>
         );
     }
 }

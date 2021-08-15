@@ -2,8 +2,7 @@ import React from "react";
 import {connect} from "react-redux";
 
 // Styles
-import "./board.styles.css";
-
+import { ParentBoxStyles } from "./board.styles";
 
 // Components
 import Menu from "../menu/menu.component";
@@ -11,10 +10,10 @@ import cn from "../../redux/board/board.data";
 
 const Board = ({children, power}) => {
     return (
-        <div className="parent-box">
+        <ParentBoxStyles>
             <Menu />
             {power ? children : cn}
-        </div>
+        </ParentBoxStyles>
     );
 };
 
