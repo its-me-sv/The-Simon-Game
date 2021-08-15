@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/The-Simon-Game/static/css/main.6ba74b16.chunk.css",
-    "main.js": "/The-Simon-Game/static/js/main.d65b9a5a.chunk.js",
-    "main.js.map": "/The-Simon-Game/static/js/main.d65b9a5a.chunk.js.map",
+    "main.js": "/The-Simon-Game/static/js/main.4e8a8cea.chunk.js",
+    "main.js.map": "/The-Simon-Game/static/js/main.4e8a8cea.chunk.js.map",
     "runtime-main.js": "/The-Simon-Game/static/js/runtime-main.2bee0880.js",
     "runtime-main.js.map": "/The-Simon-Game/static/js/runtime-main.2bee0880.js.map",
     "static/js/2.1e61687e.chunk.js": "/The-Simon-Game/static/js/2.1e61687e.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.2bee0880.js",
     "static/js/2.1e61687e.chunk.js",
     "static/css/main.6ba74b16.chunk.css",
-    "static/js/main.d65b9a5a.chunk.js"
+    "static/js/main.4e8a8cea.chunk.js"
   ]
 }
