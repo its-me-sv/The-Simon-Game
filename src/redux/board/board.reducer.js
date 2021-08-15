@@ -82,6 +82,7 @@ const boardReducer = (state = INITIAL_STATE, action) => {
                 };
             }
             playSound("4");
+            window.alert(`Mistake Made\nStrict mode: ${state.strict ? "On" : "Off"}`);
             if (state.strict === true)
                 return {
                     ...state,
