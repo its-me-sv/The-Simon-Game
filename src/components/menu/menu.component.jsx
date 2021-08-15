@@ -58,8 +58,8 @@ const Menu = ({
         let finalChildren = [];
         for (let i = 0; i < 4; i += 1) {
             finalChildren.push(
-                <div
-                    className={`child-box ${colorMap[i]}`}
+                <ChildBoxStyles
+                    styleColor={colorMap[i]}
                     onClick={
                         () => {
                             playSound(`${i}`);
@@ -67,7 +67,7 @@ const Menu = ({
                         }
                     }
                     key={i}
-                ></div>
+                ></ChildBoxStyles>
             );
         }
         setChildren([...finalChildren]);
