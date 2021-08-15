@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/The-Simon-Game/static/css/main.6ba74b16.chunk.css",
-    "main.js": "/The-Simon-Game/static/js/main.4e8a8cea.chunk.js",
-    "main.js.map": "/The-Simon-Game/static/js/main.4e8a8cea.chunk.js.map",
+    "main.js": "/The-Simon-Game/static/js/main.2c19e471.chunk.js",
+    "main.js.map": "/The-Simon-Game/static/js/main.2c19e471.chunk.js.map",
     "runtime-main.js": "/The-Simon-Game/static/js/runtime-main.2bee0880.js",
     "runtime-main.js.map": "/The-Simon-Game/static/js/runtime-main.2bee0880.js.map",
-    "static/js/2.1e61687e.chunk.js": "/The-Simon-Game/static/js/2.1e61687e.chunk.js",
-    "static/js/2.1e61687e.chunk.js.map": "/The-Simon-Game/static/js/2.1e61687e.chunk.js.map",
+    "static/js/2.faa22298.chunk.js": "/The-Simon-Game/static/js/2.faa22298.chunk.js",
+    "static/js/2.faa22298.chunk.js.map": "/The-Simon-Game/static/js/2.faa22298.chunk.js.map",
     "index.html": "/The-Simon-Game/index.html",
     "static/css/main.6ba74b16.chunk.css.map": "/The-Simon-Game/static/css/main.6ba74b16.chunk.css.map",
-    "static/js/2.1e61687e.chunk.js.LICENSE.txt": "/The-Simon-Game/static/js/2.1e61687e.chunk.js.LICENSE.txt",
+    "static/js/2.faa22298.chunk.js.LICENSE.txt": "/The-Simon-Game/static/js/2.faa22298.chunk.js.LICENSE.txt",
     "static/media/index.css": "/The-Simon-Game/static/media/ProximaNova-Semibold.815823c6.otf"
   },
   "entrypoints": [
     "static/js/runtime-main.2bee0880.js",
-    "static/js/2.1e61687e.chunk.js",
+    "static/js/2.faa22298.chunk.js",
     "static/css/main.6ba74b16.chunk.css",
-    "static/js/main.4e8a8cea.chunk.js"
+    "static/js/main.2c19e471.chunk.js"
   ]
 }
